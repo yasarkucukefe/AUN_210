@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>YBS210</title>
+        <title>PHP Web Sayfası</title>
     </head>
     <body>
-        Sunucu Tarafı Programlama Dersi
+        <h1>Bugün günlerden <?php echo date('l');  ?>.</h1>
     </body>
 </html>

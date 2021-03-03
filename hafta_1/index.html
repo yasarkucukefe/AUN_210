@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Web Sayfası</title>
+    </head>
+    <body>
+        <div>Bugün günlerden <label id='gun'>Gün</label></div>
+        <script>
+            //JS script ile gün yazısının güncellenmesi (Front end)
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const d = new Date();
+            const dayName = days[d.getDay()];
+            //document.getElementById('gun').innerHTML=dayName;
+            //
+            fetch('gun.php')
+            .then(resp => resp.text())
+            .then(data => document.getElementById('gun').innerHTML=data);
+        </script>     
+    </body>
+</html>
