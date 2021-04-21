@@ -22,10 +22,11 @@ else{echo "Portakal";}
 
 //Array'ler
 echo "<hr>";
+
 $_mevyeler = array("Elma","Portakal","Karpuz");
 $_baska = $_mevyeler;
 if($_baska === $_mevyeler){echo "aynı";}
-else{echo "farklı";}
+else{echo " farklı";}
 //
 $_baska[0] = "Üzüm";
 if($_baska === $_mevyeler){echo " aynı";}
