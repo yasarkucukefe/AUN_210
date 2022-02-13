@@ -12,7 +12,8 @@ app.get('/',(req,res)=>{
     console.log(url_q);
     const json_obj = token_cozum(url_q);
     
-    res.writeHead(200, {'Content-type':'text/html'});
+    res.writeHead(200, {"Content-Type" : "text/html; charset=UTF-8"});
+
     res.write('<html><head><meta charset="utf-8"></head><body>')
     res.write(`ders:${json_obj.ders} <br> tarih:${json_obj.tarih}` );
     res.write('</body></html>');
