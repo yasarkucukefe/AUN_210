@@ -1,3 +1,0 @@
-Bu bir metin dosyasıdır.
-Çok sayıda satırdan oluşabilir.
-Dosyayı okumak için pek çok yöntem vardır.

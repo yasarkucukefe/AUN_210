@@ -1,2 +1,0 @@
-Yeni dosya içeriği:
-Buraya yazdıklarım yeni.txt dosyasına "pipe" ile aktarılıyor.
