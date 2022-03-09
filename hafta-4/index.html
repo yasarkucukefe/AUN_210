@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <style type="text/css">
+        input {margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Yeni Kayıt</h1>
+    <div>
+        <form action="yeni.php" method="POST">
+            <input type="email" name="q1" placeholder="e-posta" required><br>
+            <input type="text" name="q2" placeholder="İsim Soyisim" autocomplete="false" required><br>
+            <input type="password" minlength="8" name="q3" placeholder="Şifre" required><br>
+            <input type="submit" name="buton" value="Yeni Kayıt">
+        </form>
+    </div>
+    
+</body>
+</html>
