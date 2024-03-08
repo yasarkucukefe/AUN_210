@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front-end</title>
+</head>
+<body>
+	<h1>İsim Listesi</h1>
+
+	<div id='isimler'></div>
+	
+	<script type="text/javascript">
+		fetch("sunucu.php").then(resp => resp.json()).then(json => {
+			console.log(json);
+			json.data.forEach(isim => {
+				document.getElementById("isimler").innerHTML = document.getElementById("isimler").innerHTML + isim + "<br>";
+			})
+
+		});
+	</script>
+
+</body>
+</html>
