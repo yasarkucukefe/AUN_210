@@ -1,0 +1,9 @@
+{"isim":"Sarp Alt\u0131nok","email":"sarp@mail.com","sifre":"$2y$10$QrxRihWC0.EIEa1RfMjv6eGOWojxbeu5.ApltZOYGuZlzY48C4mxi"}
+{"isim":"\u015fevval derdiyok","email":"sevval@gmail.com","sifre":"$2y$10$ObcT9QPpQnYWXyx7q9L2BeJi8LlHth2t7lS66VsAAFESEHgqxpPIq"}
+{"isim":"Selim \u00d6nemli","email":"233502041@ogr.altinbas.edu.tr","sifre":"$2y$10$KAHJAzWAnf4Y5biVqgHDF.uvo2CzSbrJVgls6WJz.0EV6k8hMrO.y"}
+{"isim":"fatih terim","email":"terim@mail","sifre":"$2y$10$26mk38NLqR2UEQcvXsY39OANQt5F9ogmZY\/TT\/TS5Ofw3cUNKHleu"}
+{"isim":"fatih terim","email":"terim@mail","sifre":"$2y$10$M3GePt\/PrQCgMl7ftN4IQeTmWUnI6.NF7IH.rCjocxDPY5\/HP70h6"}
+{"isim":"fatih terim","email":"terim@mail","sifre":"$2y$10$LabhN.wep8YXFXrQyq0N8uziw5uz4M68j4gAh1Vj7VUutZXhWZV5C"}
+{"isim":"yasar efe","email":"yasar@mail.com","sifre":"$2y$10$8c1trV\/1YAWPFmq5OpyCo.eUDRPx.64vigdQX8MT14bZXYM2p7sCG"}
+{"isim":"Selim Onemli","email":"233502041@ogr.altinbas.edu.tr","sifre":"$2y$10$PFngAwsTfdt3Dra0M3W4WeEhts6inZZOONh9vgC.Ldlff6IofAjAi"}
+{"isim":"Selim Onemli","email":"233502041@ogr.altinbas.edu.tr","sifre":"$2y$10$ONGBB7nNfe4DusnXgC7HfeuEPYj9Yrwa\/i\/yRJGHEdm9q7JYY4\/7S"}
