@@ -30,7 +30,9 @@ http.createServer(function(req,res){
   
                 // mimetype. 
                 if(file.mimetype !== "image/jpeg"){
-                    
+                    res.write("Sadece resim dosyaları yüklenebilir.");
+                    res.end();
+                    return;
                 }
 
                 //Aynı isimli başka bir dosya ismi var mı?
