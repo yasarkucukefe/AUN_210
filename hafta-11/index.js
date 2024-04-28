@@ -24,35 +24,33 @@ http.createServer(function(req,res){
                 }
 
                 //dosya kayıt işlemi
-                const uploaded_file = files.file.filepath;
-                const dosya_path = "./uploads/"+files.file.originalFilename;
-                console.log(uploaded_file); // Undefined ???
+                const file = files.file[0];
+                const uploaded_file = file.filepath;
+                const dosya_path = "./uploads/"+file.originalFilename;
   
-                // mimetype kontrol edilemiyor. 
-                const dosya_mime = mime.lookup(uploaded_file);
-                console.log(dosya_mime);
-                if(mime.lookup(uploaded_file) !== "image/jpeg"){
-                    res.write("Sadece resim dosyaları yüklenebilir.");
-                    res.end();
-                    return;
+                // mimetype. 
+                if(file.mimetype !== "image/jpeg"){
+                    
                 }
 
                 //Aynı isimli başka bir dosya ismi var mı?
-                if(fs.lstatSync(uploaded_file).isFile()){
-                    res.write("Aynı isimde başka bir dosya zaten mevcut.");
-                    res.end();
-                    return;
-                }
-
-                //Upload
-                fs.rename(uploaded_file, dosya_path, function(err){
-                    if(err){
-                        res.write("Bir hata oluştu.");
-                    }else{
-                        res.write("Dosya yüklendi.");
+                fs.access(dosya_path, fs.constants.F_OK, (err) => {
+                    if(err){ // Aynı isimde bir dosya mevcut değil
+                        //Upload
+                        fs.rename(uploaded_file, dosya_path, function(err){
+                            if(err){
+                                res.write("Bir hata oluştu.");
+                            }else{
+                                res.write("Dosya yüklendi.");
+                            }
+                            res.end();
+                        })
+                    }else{ 
+                        res.write("Sadece resim dosyaları yüklenebilir.");
+                        res.end();
                     }
-                    res.end();
                 })
+                
             }
         });
     }else{
