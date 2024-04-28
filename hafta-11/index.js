@@ -16,15 +16,16 @@ http.createServer(function(req,res){
                 res.write("Yükleme işlemi başarısız oldu.");
                 res.end();
             }else{
+                const file = files.file[0];
+
                 //dosya boyut kontrolu
-                if(files.file.size > 10000000){
+                if(file.size > 10000000){
                     res.write("Dosya 10MB büyük olamaz.");
                     res.end();
                     return;
                 }
 
                 //dosya kayıt işlemi
-                const file = files.file[0];
                 const uploaded_file = file.filepath;
                 const dosya_path = "./uploads/"+file.originalFilename;
   
