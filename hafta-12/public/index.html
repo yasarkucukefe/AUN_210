@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Node.JS Sunucusu</title>
+    </head>
+
+    <body>
+        <h1>Node.JS Sununucu tarafından Express ile gönderilen public/index.html dosyası görüntülenmektedir.</h1>
+        <form action="user" method="post" enctype="multipart/form-data">
+            <input type="text" name="q1" placeholder="Okul No" required>
+            <input type="text" name="q2" placeholder="İsim ve Soyisim" required>
+            <input type="submit" value="Kaydet (POST)">
+        </form>
+
+        <form action="user" method="get" enctype="multipart/form-data">
+            <input type="text" name="q1" placeholder="Okul No" required>
+            <input type="text" name="q2" placeholder="İsim ve Soyisim" required>
+            <input type="submit" value="Kaydet (GET)">
+        </form>
+
+    </body>
+</html>
